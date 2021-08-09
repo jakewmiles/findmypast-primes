@@ -4,19 +4,19 @@ Contained in this repo is my solution for the "prime tables" coding challenge! I
 
 ## How to run it
 
-From the terminal, clone this repository by using the command: 
+Ensure that NPM (node package manager) is installed on your machine, it comes with installation of node.js (https://nodejs.org/en/download/)
 
-`git clone https://github.com/jakewmiles/findmypast-primes.git`
+1. From the terminal, clone this repository by using the command: `git clone https://github.com/jakewmiles/findmypast-primes.git`
 
-Still in the terminal, enter `cd findmypast-primes/findprimes/` and then `npm install` to install the required dependencies inside of the app.
+2. Still in the terminal, enter `cd findmypast-primes/findprimes/` and then `npm install` to install the required dependencies inside of the app.
 
-Still inside of the terminal, run `npm t` to run the Mocha testing suite.
+3. Still inside of the terminal, run `npm t` to run the Mocha testing suite.
 
-Lastly, you can run `npm start` to spin up the React App in your browser. It should open up automagically 🙂 
+4. Lastly, you can run `npm start` to spin up the React App in your browser. It should open up automagically 🙂 
 
 Enjoy sliding to create larger/smaller multiplication tables!
 
-Once you're done, you can close down the React App from the terminal by hitting `Ctrl + C` on your keyboard ⌨️
+Once you're finished playing, you can close down the React App from the terminal by hitting `Ctrl + C` on your keyboard ⌨️
 
 ## What I'm pleased with
 
