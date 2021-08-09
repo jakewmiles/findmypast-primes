@@ -1,0 +1,15 @@
+body {
+  text-align: right;
+  font-family: monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.odd:before {
+  content:"";
+  background-color:#00000020;
+  position: absolute;
+  height: 1rem;
+  width: 100%; 
+  z-index: -1;
+}
