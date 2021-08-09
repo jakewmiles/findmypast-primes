@@ -13,7 +13,7 @@ function App() {
   }, [N]);
 
   return (
-    <div className="App">
+    <div className="App" style={{overflow: 'scroll'}}>
       <header className="App-header">
         <h1>Multiplication table of the {N > 1 ? `first ${N} prime numbers`: `first prime number`} 
           <input type="range" min="1" max="100" value={N} onChange={handler} step="1">
@@ -23,10 +23,10 @@ function App() {
         <div>
         {primeString.split('\n').map((line, index) => {
           return (
-            <div key={line}>
+            <div key={line} className={index === 0 ? 'odd' : 'even'} style={{display: 'flex', flexDirection: 'row'}}>
               {line.split('-').map((number, index) => {
                 return (
-                  <div key={number}>
+                  <div key={number} style={index === 0 ? {minWidth: '80px', backgroundColor: '#00000020'} : {minWidth: '80px'}}>
                     {number}
                   </div>
                 )
