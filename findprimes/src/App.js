@@ -24,7 +24,13 @@ function App() {
         {primeString.split('\n').map((line, index) => {
           return (
             <div key={line}>
-              {line}
+              {line.split('-').map((number, index) => {
+                return (
+                  <div key={number}>
+                    {number}
+                  </div>
+                )
+              })}
             </div>)
         })}
         </div>
