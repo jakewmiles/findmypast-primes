@@ -1,10 +1,16 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { generatePrimeString, firstNPrimes } from './helperFunctions';
 
 function App() {
   const [N, setN] = useState(1);
+  const [primeString, setPrimeString] = useState('');
   const handler = (e) => {
     setN(e.target.value);
   }
+
+  useEffect(() => {
+    setPrimeString(generatePrimeString(firstNPrimes(N)));
+  }, [N]);
 
   return (
     <div className="App">
@@ -14,6 +20,7 @@ function App() {
           </input>
         </h1>
         <h2>Drag the slider to see larger/smaller tables! Scroll the page as N increases...</h2>
+        {primeString}
       </header>
     </div>
   );
