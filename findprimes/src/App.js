@@ -20,7 +20,14 @@ function App() {
           </input>
         </h1>
         <h2>Drag the slider to see larger/smaller tables! Scroll the page as N increases...</h2>
-        {primeString}
+        <div>
+        {primeString.split('\n').map((line, index) => {
+          return (
+            <div key={line}>
+              {line}
+            </div>)
+        })}
+        </div>
       </header>
     </div>
   );
