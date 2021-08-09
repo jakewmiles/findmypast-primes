@@ -7,4 +7,18 @@ const primeTester = (n) => {
   return true;
 }
 
+const firstNPrimes = (n) => {
+  const primeList = [];
+  let potentialPrime = 1;
+  while (primeList.length < n) {
+    if (primeTester(potentialPrime)) {
+      primeList.push(potentialPrime)
+      potentialPrime++;
+    } else potentialPrime++;
+  }
+  return primeList;
+}
+
 exports.primeTester = primeTester;
+exports.firstNPrimes = firstNPrimes;
+
