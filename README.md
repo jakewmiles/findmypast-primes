@@ -8,7 +8,7 @@ From the terminal, clone this repository by using the command:
 
 `git clone https://github.com/jakewmiles/findmypast-primes.git`
 
-Still in the terminal, enter `cd findprimes` and then `npm install` to install the required dependencies inside of the app.
+Still in the terminal, enter `cd findmypast-primes/findprimes/` and then `npm install` to install the required dependencies inside of the app.
 
 Still inside of the terminal, run `npm t` to run the Mocha testing suite.
 
